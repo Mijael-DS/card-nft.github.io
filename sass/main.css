@@ -7,6 +7,8 @@
 body {
   font-size: 18px;
   background-color: hsl(217deg, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 300, 400, 600;
 }
 body #cont-card {
   min-height: 100vh;
