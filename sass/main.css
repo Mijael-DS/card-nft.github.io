@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  background-color: hsl(217deg, 54%, 11%);
+}
+body #cont-card {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body #cont-card .card {
+  border-radius: 2%;
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  margin: 1rem;
+}
+body #cont-card .card .cont-img {
+  height: 25rem;
+  padding: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5ms;
+}
+body #cont-card .card .cont-img img {
+  border-radius: 2%;
+  height: 100%;
+}
+body #cont-card .card .cont-img .icon-view {
+  position: absolute;
+  top: -100%;
+  height: 100%;
+  left: 0;
+  text-align: center;
+  background-color: hsla(178deg, 100%, 50%, 0.6);
+  padding: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+}
+body #cont-card .card .cont-img .icon-view img {
+  border-radius: 2%;
+  scale: 0.3;
+  height: 100%;
+}
+body #cont-card .card .cont-img:hover .icon-view {
+  top: 0;
+  transition: all 1s;
+  opacity: 1;
+  visibility: visible;
+}
+body #cont-card .card .cont-info {
+  text-align: left;
+  height: 15rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body #cont-card .card .cont-info h1 {
+  font-size: 1.5em;
+  color: hsl(0deg, 0%, 100%);
+}
+body #cont-card .card .cont-info h1:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: default;
+}
+body #cont-card .card .cont-info h2 {
+  font-size: 1em;
+  color: hsl(215deg, 51%, 70%);
+}
+body #cont-card .card .cont-info h2 span:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: default;
+}
+body #cont-card .card .cont-info h4, body #cont-card .card .cont-info p {
+  color: hsl(215deg, 51%, 70%);
+}
+body #cont-card .card .cont-info h3 {
+  color: hsl(178deg, 100%, 50%);
+  font-size: 1em;
+}
+body #cont-card .card .cont-info .cost {
+  padding: 0.5rem;
+  border-bottom: gray solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body #cont-card .card .cont-info .cost .icon-ethereum {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+body #cont-card .card .cont-info .cost .icon-clock {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+body #cont-card .card .cont-info .creator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body #cont-card .card .cont-info .creator img {
+  height: 30px;
+}/*# sourceMappingURL=main.css.map */

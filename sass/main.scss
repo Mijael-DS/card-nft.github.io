@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body  {
+  font-size: 18px;
+  background-color: hsl(217, 54%, 11%);
+  #cont-card  {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    .card {
+      border-radius: 2%;
+      border: solid;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;  
+      text-align: center;
+      padding: 1rem; 
+      box-shadow: 0 15px 25px rgba(0,0,0,0.50);
+      height: 100%;
+      margin: 1rem;
+      
+      
+      .cont-img {
+        height: 25rem;
+        padding: 0.5rem;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5ms;
+        img {
+          border-radius: 2%;
+          height: 100%; 
+          
+        }
+        .icon-view  {
+          position: absolute;
+          top: -100%;
+          height: 100%;
+          left: 0;
+          text-align: center;
+          background-color: hsl(178, 100%, 50%, 0.6);
+          padding: 0.5rem;
+          opacity: 0;
+          visibility: hidden;
+          img {
+            border-radius: 2%;
+            scale: 0.3;
+            height: 100%;
+          }
+        }
+        &:hover .icon-view  {
+          top: 0; 
+          transition: all 1s;
+          opacity: 1;
+          visibility: visible;
+        }
+      }  
+      .cont-info  {
+        text-align: left;
+        height: 15rem;
+        padding: 0.5rem; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-around; 
+        h1  {
+          font-size: 1.5em;
+          color: hsl(0, 0%, 100%);
+          &:hover {
+            color: hsl(178, 100%, 50%);
+            cursor: default;
+          }
+        }
+        h2  {
+          font-size: 1em;
+          color: hsl(215, 51%, 70%);
+          span:hover {
+            color: hsl(178, 100%, 50%);
+            cursor: default;
+          }
+        }
+        h4,p {
+          color: hsl(215, 51%, 70%);
+        }
+        h3 {
+          color: hsl(178, 100%, 50%);
+          font-size: 1em;
+        }
+        .cost {
+          padding: 0.5rem;
+          border-bottom: gray solid;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; 
+          .icon-ethereum  {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+          }
+          .icon-clock {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+          }
+        }
+        .creator  {
+          
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          img {
+            height: 30px;
+            
+          }
+        }
+      }
+    }
+  }
+}
